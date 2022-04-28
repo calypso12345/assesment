@@ -1,0 +1,7 @@
+<app-result-component 
+    (result)="updateResult($event)"
+    (validateErrors)="validateErrors()"
+    [resultSel]="resultSel$ | async"
+    [errors]="errors$ | async"
+    [calculationObject]="calculationObject$ | async"
+></app-result-component>

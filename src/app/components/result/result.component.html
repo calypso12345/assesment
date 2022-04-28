@@ -1,0 +1,11 @@
+<div class="container result-card">
+  <div class="row" style="margin-top: 30px">
+      <div class="col-12">
+          <div style="color:black"> Score: {{resultSel}}</div>
+          <div class="alert alert-danger" role="alert" *ngIf="errors && errors.length > 0">
+            <div>Errors:</div>  
+            <div *ngFor="let error of errors">{{error.message}}</div>
+          </div>
+      </div>
+  </div>
+</div>

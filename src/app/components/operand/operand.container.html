@@ -1,0 +1,6 @@
+<app-operand-component 
+    (operand)="updateOperand($event)"
+    (validate)="validate()"
+    [operandSel]="operand$ | async"
+    [operationSel]="operation$ | async"
+></app-operand-component>
